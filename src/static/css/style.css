@@ -4,12 +4,13 @@ html {
   font: caption;
   padding: 0px;
   margin: 0px;
+  max-width: 100%;
 }
 
 header {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  max-width: 100%;
   min-height: 70%;
   background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/header.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -19,29 +20,25 @@ header {
 body {
   padding: 0px;
   margin: 0px;
+  max-width: 100%;
 }
 
 footer {
   margin: 4em auto;
   padding: 2em 0em;
   text-align: center;
-  max-width: 800px;
-  width: 100%
+  max-width: 100%;
 }
 
 h1 {
-  margin: inherit;
-  padding: inherit;
   text-align: center;
   font-weight: bold;
 }
 
-.header-name {
-  padding-top: 8em
-}
-
-.header-title {
-  padding-bottom: 12em
+.app-header {
+  padding: 200px 0px;
+  margin: 0px;
+  max-width: 100%;
 }
 
 .about-container p{
@@ -78,7 +75,7 @@ div .about-container > .circle--img {
   display: table-row;
   max-width: 200px;
   max-height: 200px;
-  padding: 2em;
+  padding: 2em 4em;
   border-radius: 50%;
   float: left;
 }
