@@ -8,7 +8,10 @@ export default class Layout extends React.Component {
     return (
       <div className="app-container">
         <header>
-          <Link to="/">HOME</Link>
+          <div className="app-header">
+            <h1>Jeff Brys</h1>
+            <h3>Quality Assurance Expert</h3>
+          </div>
         </header>
         <div className="app-content">{this.props.children}</div>
         <footer>
@@ -18,7 +21,7 @@ export default class Layout extends React.Component {
 
           <p>
             Built with <strong>❤</strong> and code to showcase universal rendering and routing with <strong>React</strong> and <strong>Express</strong>.
-            See the code (complete with tests) on <a href="https://github.com/jbrys/jrocks-homepage">Github</a>.
+            <br/>See the code (complete with tests) on <a href="https://github.com/jbrys/jrocks-homepage">Github</a>.
           </p>
         </footer>
       </div>
