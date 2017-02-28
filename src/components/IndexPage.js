@@ -1,12 +1,15 @@
 'use strict';
 
 import React from 'react';
+import About from './about';
 
 export default class IndexPage extends React.Component {
   render() {
     return (
       <div className="home">
-        <h1>This is the homepage</h1>
+        <About />
+        <About />
+        <About />
       </div>
     );
   }
