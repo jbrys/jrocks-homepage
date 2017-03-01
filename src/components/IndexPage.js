@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import About from './about';
+import About from './About';
 
 export default class IndexPage extends React.Component {
   render() {
