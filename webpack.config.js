@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  devtool: debug ? 'inline-sourcemap' : null,
+  devtool: debug ? 'inline-sourcemap' : false,
   entry: path.join(__dirname, 'src', 'app-client.js'),
   devServer: {
     hot: true,
@@ -36,8 +36,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV' : JSON.stringify(process.env.NODE_ENV)
     }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       mangle: true,
