@@ -8,7 +8,7 @@
     "start": "cross-env NODE_ENV=production node_modules/.bin/babel-node --presets react,es2015 src/server.js",
     "build": "cross-env NODE_ENV=production node_modules/.bin/webpack -p",
     "start-dev": "cross-env node_modules/.bin/webpack-dev-server --hot --inline --progress --colors --watch --content-base ./",
-    "postinstall": "npm build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
